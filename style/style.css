@@ -16,7 +16,6 @@
   font-family: "Big Shoulders Display", cursive;
 }
 body {
-  overflow-x: hidden;
   width: 1440px;
 }
 
@@ -27,8 +26,6 @@ body {
   text-transform: uppercase;
   width: 514px;
   height: 176px;
-  padding-top: 1px;
-  padding-left: 19px;
 }
 
 .header2 {
@@ -57,7 +54,7 @@ body {
   display: inline;
 }
 .button {
-  background: var(--brown);
+  background: var(--almost-black);
   padding: 24px 35px 24px 32px;
   color: var(--white);
   font-weight: 800;
@@ -69,9 +66,14 @@ body {
 }
 
 .flex1 {
-  padding-top: 10px;
-  padding-left: 280px;
+  padding-left: 246px;
   width: 300px;
+}
+.button-location:hover .button{
+  background: var(--brown);
+}
+.button-location:hover > img {
+ background:var(--almost-black);
 }
 
 .paragraph2 {
@@ -110,7 +112,7 @@ a img {
 
 .main-header {
   display: flex;
-  padding: 130px 164px 180px 165px;
+  padding: 190px 160px 180px 165px;
 }
 
 .main-header > p {
@@ -122,7 +124,7 @@ main {
 .general-header {
   display: flex;
   background-color: var(--almost-black);
-  width: 75%;
+  width: 990px;
   height: 800px;
   background-image: url(../assets/desktop/image-hero@2x.jpg);
   background-position: right top;
@@ -142,15 +144,16 @@ main {
   padding-left: 165px;
   justify-content: space-between;
   align-items: center;
+  
 }
 .content > img {
-  width: 2000px;
+  width: 635px;
   height: 400px;
-  transform: translateX(16%);
+  ;
+
 }
 .main-content {
   padding-right: 125px;
-  margin-left: -45px;
 }
 .picture1 {
   display: none;
@@ -158,7 +161,7 @@ main {
 .pictures {
   display: flex;
   padding-top: 60px;
-  padding-left: 120px;
+  padding-left: 150px;
 }
 .pictures::before {
   content: url(../assets/desktop/image-grid-2.jpg);
@@ -168,7 +171,7 @@ main {
 }
 .pictures::after {
   content: url(../assets/desktop/image-grid-3.jpg);
-  transform: translate(-109%, 0%);
+  transform: translateX(-107%);
 }
 
 .picture2 {
@@ -185,7 +188,7 @@ main {
   width: 350px;
   height: 320px;
   padding: 30px 36px 0px 60px;
-  margin: 0px 40px;
+  margin: 0px 30px;
 }
 footer {
   background: var(--almost-black);
@@ -206,3 +209,6 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+
+

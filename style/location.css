@@ -1,0 +1,132 @@
+:root {
+  --brown: #d5966c;
+  --almost-black: #151515;
+  --white: #ffffff;
+  --dark-gray: #444444;
+}
+body {
+  width: 1440px;
+  overflow-x: auto;
+}
+
+/* location map*/
+
+.map {
+  position: relative;
+}
+
+.map > .button-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button {
+  font-family: "Big Shoulders Display", cursive;
+  background: var(--almost-black);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  color: var(--white);
+  padding: 24px 35px;
+}
+a > img {
+  padding: 24px;
+  background: var(--brown);
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  transform: translateX(54%);
+}
+
+.button-container:hover .button {
+  background: var(--brown);
+}
+
+.button-container:hover > img {
+  background: var(--almost-black);
+}
+/* main section */
+.main-part {
+  background: var(--almost-black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 104px;
+  padding-bottom: 120px;
+}
+
+.main-part h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 70px;
+  font-weight: 900px;
+  line-height: 70px;
+  padding-left: 165px;
+  padding-bottom: 170px;
+  text-transform: uppercase;
+  padding-right: 250px;
+}
+.content {
+  padding-right: 150px;
+}
+
+.content h4 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--brown);
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 36px;
+}
+
+.content p {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.paragraph4 {
+  padding-top: 32px;
+  width: 540px;
+}
+/* Footer */
+footer {
+  font-family: "Outfit", sans-serif;
+  background: var(--brown);
+  display: flex;
+  padding: 80px 165px 80px 165px;
+  justify-content: space-between;
+}
+footer p{
+    width: 430px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+footer img{
+    width: 160px;
+    height: 58px;
+}
+.footer-icons .icons {
+    padding: 16px 14px 0 0;
+    width: 100px;
+    height: 20px;
+    display: inline;
+  }
+  .icons path{
+    fill:var(--almost-black);
+  }
+  .icons:hover path {
+    fill: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  /* Responsive web design for Mobile */
+
+  
+
+  
