@@ -4,6 +4,7 @@
   --white: #ffffff;
   --dark-gray: #444444;
 }
+
 .paragraph1,
 .paragraph2,
 .paragraph3 {
@@ -15,6 +16,158 @@
 .header3 {
   font-family: "Big Shoulders Display", cursive;
 }
+/* Mobile First Design */
+.header1 {
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 3.438rem;
+  text-transform: uppercase;
+}
+.header2 {
+  font-size: 3.125rem;
+  line-height: 2.813rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--almost-black);
+  margin: 21px 0;
+}
+.header3 {
+  font-size: 3.125rem;
+  line-height: 2.813rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+  color: var(--white);
+}
+.paragraph1 {
+  color: var(--dark-gray);
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 21px 0;
+}
+.button {
+  background: var(--almost-black);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.496rem;
+  cursor: pointer;
+  letter-spacing: 0.228rem;
+  padding: 24px 35px;
+}
+.paragraph2 {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.paragraph3 {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--white);
+  margin: 38px 0;
+}
+.header-text {
+  display: none;
+}
+.mobile-image {
+  width: 100%;
+}
+.main-header {
+  padding: 32px 16px 16px;
+}
+a img {
+  background: var(--brown);
+  padding: 24px;
+}
+.button-location {
+  display: flex;
+  text-decoration: none;
+}
+.container {
+  padding: 120px 16px;
+}
+.content img {
+  width: 100%;
+}
+.content {
+  margin: 16px 0;
+}
+.picture1 {
+  width: 100%;
+}
+.picture2 {
+  width: 100%;
+  margin-top: 16px;
+}
+.grid-text {
+  background: var(--almost-black);
+  padding: 48px 24px;
+  margin-top: 16px;
+}
+
+footer {
+  background: var(--almost-black);
+  padding: 46px 32px 50px 32px;
+}
+
+.logo {
+  width: 110px;
+}
+
+.footer-icons a {
+  padding: 16px 20px 0 0;
+}
+
+.button-location:hover .button {
+  background: var(--brown);
+}
+.button-location:hover > img {
+  background: var(--almost-black);
+}
+.icons:hover path {
+  fill: #d5966c;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive web design for Tablet */
+
+@media screen and (min-width: 768px) {
+  .mobile-image {
+    display: none;
+  }
+  .general-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    background-image: url(../assets/tablet/image-hero@2x.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50% 200%;
+  }
+
+  .header1 {
+    font-size: 4.375rem;
+    line-height: 4.063rem;
+  }
+  .header2 {
+    margin: 21px 0;
+  }
+  .header3 {
+    padding-bottom: 32px;
+  }
+
+  .main-header {
+    padding: 145px 40px 120px 389px;
+  }
+}
+
+/*
+
 body {
   width: 1440px;
 }
@@ -69,11 +222,11 @@ body {
   padding-left: 246px;
   width: 300px;
 }
-.button-location:hover .button{
+.button-location:hover .button {
   background: var(--brown);
 }
 .button-location:hover > img {
- background:var(--almost-black);
+  background: var(--almost-black);
 }
 
 .paragraph2 {
@@ -101,9 +254,7 @@ a img {
   margin-top: 64px;
 }
 
-.header-text {
-  display: none;
-}
+
 
 .mobile-image {
   width: 100%;
@@ -144,13 +295,10 @@ main {
   padding-left: 165px;
   justify-content: space-between;
   align-items: center;
-  
 }
 .content > img {
   width: 635px;
   height: 400px;
-  ;
-
 }
 .main-content {
   padding-right: 125px;
@@ -210,5 +358,19 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 375px) {
+  .general-header {
+    display: none;
+  }
+  #header-mobile {
+    display: block;
+    color: var(--almost-black);
+  }
 
+  .mobile-image {
+    width: 100%;
+    display: block;
+  }
 
+}
+*/
