@@ -4,13 +4,7 @@
   --white: #ffffff;
   --dark-gray: #444444;
 }
-body {
-  width: 1440px;
-  overflow-x: auto;
-}
-
 /* location map*/
-
 .map {
   position: relative;
 }
@@ -20,13 +14,13 @@ body {
   left: 0;
   top: 0;
 }
-
 .button {
   font-family: "Big Shoulders Display", cursive;
   background: var(--almost-black);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
-  line-height: 24px;
+  line-height: 1.5rem;
+  letter-spacing: 0.227rem;
   color: var(--white);
   padding: 24px 35px;
 }
@@ -38,7 +32,6 @@ a > img {
 a {
   text-decoration: none;
   display: flex;
-  transform: translateX(54%);
 }
 
 .button-container:hover .button {
@@ -50,6 +43,88 @@ a {
 }
 /* main section */
 .main-part {
+  background: var(--almost-black);
+  color: var(--white);
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.main-part h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size:3.125rem;
+  font-weight: 900;
+  line-height: 2.813rem;
+  padding-left: 16px;
+  padding-bottom: 48px;
+  text-transform: uppercase;
+  padding-right: 16px;
+}
+.content {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.content h4 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--brown);
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 2rem;
+}
+
+.content p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+.paragraph4 {
+  padding-top: 20px;
+}
+
+/* Footer */
+ footer {
+  font-family: "Outfit", sans-serif;
+  background: var(--brown);
+  padding: 48px 32px 50px 32px;
+}
+footer p{
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 38px 0;
+}
+footer img{
+    width: 110px;
+    height: 40px;
+}
+.footer-icons .icons {
+    padding: 16px 20px 0 0;
+    width: 100px;
+    height: 20px;
+    display: inline;
+  }
+  .icons path{
+    fill:var(--almost-black);
+  }
+  .icons:hover path {
+    fill: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+
+
+/*body {
+  width: 1440px;
+}
+/* main section */
+
+/*.main-part {
   background: var(--almost-black);
   color: var(--white);
   display: flex;
@@ -92,7 +167,7 @@ a {
   width: 540px;
 }
 /* Footer */
-footer {
+ /*footer {
   font-family: "Outfit", sans-serif;
   background: var(--brown);
   display: flex;
